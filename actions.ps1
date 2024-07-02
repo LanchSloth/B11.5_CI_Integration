@@ -22,7 +22,7 @@ function vagrant {
         [Parameter(Mandatory=$False)]
         [string]$distr = "Ubuntu-20.04",
         [Parameter(Mandatory=$False)]
-        [String]$user = "morsh92",
+        [String]$user = "lanch",
         [Parameter(Mandatory=$false, Position=0)]
         [string]$action = "up",
         [Parameter(Mandatory=$false, Position=1)]
@@ -45,13 +45,13 @@ function ansible {
         [Parameter(Mandatory=$False)]
         [string]$distr = "Ubuntu-20.04",
         [Parameter(Mandatory=$False)]
-        [String]$user = "morsh92",
+        [String]$user = "lanch",
         [Parameter(Mandatory=$False)]
         [String]$server = "lemp",
         [Parameter(Mandatory=$False)]
         [String]$invFile = "./yandex_cloud.ini",
         [Parameter(Mandatory=$False)]
-        [String]$privateKey = "~/.ssh/morsh_server_SSH",
+        [String]$privateKey = "~/.ssh/lanch_server_SSH",
         [Parameter(Mandatory=$False,Position=0)]
         [String]$args
     )
@@ -64,11 +64,11 @@ function ansiblePlaybook {
         [Parameter(Mandatory=$False)]
         [string]$distr = "Ubuntu-20.04",
         [Parameter(Mandatory=$False)]
-        [String]$user = "morsh92",        
+        [String]$user = "lanch",        
         [Parameter(Mandatory=$False)]
         [String]$invFile = "./yandex_cloud.ini",
         [Parameter(Mandatory=$False)]
-        [String]$privateKey = "~/.ssh/morsh_server_SSH",
+        [String]$privateKey = "~/.ssh/lanch_server_SSH",
         [Parameter(Mandatory=$False)]
         [String]$Playbook = "./provisioning.yaml",
         [Parameter(Mandatory=$False,Position=0)]
@@ -94,7 +94,7 @@ function ansibleVault {
         [Parameter(Mandatory=$False)]
         [string]$distr = "Ubuntu-20.04",
         [Parameter(Mandatory=$False)]
-        [String]$user = "morsh92",
+        [String]$user = "lanch",
         [Parameter(Mandatory=$False,Position=0)]
         [String]$action = 'encrypt',
         [Parameter(Mandatory=$False,Position=0)]
@@ -118,7 +118,7 @@ function ansibleGalaxy {
         [Parameter(Mandatory=$False)]
         [string]$distr = "Ubuntu-20.04",
         [Parameter(Mandatory=$False)]
-        [String]$user = "morsh92",
+        [String]$user = "lanch",
         [Parameter(Mandatory=$False,Position=0)]
         [String]$type = 'role',
         [Parameter(Mandatory=$False,Position=0)]
